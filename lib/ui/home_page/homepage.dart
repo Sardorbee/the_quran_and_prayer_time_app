@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:the_quran_and_prayer_time_app/ui/home_page/second.dart';
 import 'package:the_quran_and_prayer_time_app/utils/colors.dart';
 
@@ -16,18 +15,18 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       
       body: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Center(
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 155,
               ),
               Image.asset(
                 "assets/images/quran1.png",
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
@@ -37,7 +36,7 @@ class _HomePageState extends State<HomePage> {
                     fontWeight: FontWeight.bold,
                     color: Appcolors.mainbtncolor),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 150,
               ),
               Container(
@@ -53,11 +52,11 @@ class _HomePageState extends State<HomePage> {
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => SeconoPAge(),
+                            builder: (context) => const SeconoPAge(),
                           ),
                           (route) => false);
                     },
-                    child: Text(
+                    child: const Text(
                       "Read Now",
                       style: TextStyle(color: Colors.white, fontSize: 24),
                     )),
